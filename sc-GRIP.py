@@ -111,12 +111,12 @@ if __name__ == "__main__":
     species = "human"
     celltype = "muscle"
 
-    correlation_df = pd.read_csv("../sc-grip/"+species+"_"+celltype+"_correlations.csv")
-    expression_file = "../data.nosync/"+species+"_"+celltype+"_gex_common.csv"
-    edge_file = "../data.nosync/"+species+"_"+celltype+"_tf_interaction_common.csv"
+    correlation_df = pd.read_csv("sc-grip/"+species+"_"+celltype+"_correlations.csv")
+    expression_file = "data/"+species+"_"+celltype+"_gex_common.csv"
+    edge_file = "data/"+species+"_"+celltype+"_tf_interaction_common.csv"
     print(expression_file,edge_file)
-    n_runs = 2
-    num_epochs = 10
+    n_runs = 5
+    num_epochs = 100
 
     edge_df, expr_df, dataset, edge_index = load_cell_graphs(expression_file=expression_file, edge_file=edge_file)
     print(f"Loaded {len(dataset)} graphs (1 per cell)")
