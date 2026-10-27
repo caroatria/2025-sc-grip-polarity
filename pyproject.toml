@@ -1,0 +1,33 @@
+[build-system]
+requires = ["setuptools>=64"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "scgrip"
+version = "0.2.0"
+description = "Graph-convolutional, label-free scoring of TF-target interactions from single-cell RNA-seq, for model and non-model species"
+readme = "README.md"
+requires-python = ">=3.10"
+authors = [{ name = "Carolina Atria" }]
+dependencies = [
+    "numpy>=1.23",
+    "pandas>=1.5",
+    "torch>=2.0",
+    "torch_geometric>=2.3",
+    "scikit-learn>=1.2",
+]
+
+[project.optional-dependencies]
+h5ad = ["scanpy>=1.9", "h5py>=3.8"]
+plot = ["matplotlib>=3.6", "networkx>=3.0"]
+encode = ["joblib", "arboreto", "pyscenic", "ctxcore"]
+dev = ["pytest>=7"]
+
+[project.scripts]
+scgrip = "scgrip.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

@@ -1,0 +1,17 @@
+expression_from	comparison	view	auroc_mean	auroc_lo	auroc_hi
+HepG2	matched	all_edges	0.4995	0.4898	0.5071
+HepG2	matched	discriminative_edges	0.4993	0.4883	0.5091
+HepG2	matched	motif_annotated_tfs	0.4993	0.487	0.5089
+HepG2	matched	per_tf_mean_auroc	0.498	0.4844	0.5126
+HepG2	swapped	all_edges	0.4999	0.4929	0.5076
+HepG2	swapped	discriminative_edges	0.5007	0.4909	0.5117
+HepG2	swapped	motif_annotated_tfs	0.4982	0.4871	0.5094
+HepG2	swapped	per_tf_mean_auroc	0.4995	0.4872	0.5127
+K562	matched	all_edges	0.4999	0.4929	0.5076
+K562	matched	discriminative_edges	0.5007	0.4909	0.5117
+K562	matched	motif_annotated_tfs	0.4982	0.4871	0.5094
+K562	matched	per_tf_mean_auroc	0.4995	0.4872	0.5127
+K562	swapped	all_edges	0.4995	0.4898	0.5071
+K562	swapped	discriminative_edges	0.4993	0.4883	0.5091
+K562	swapped	motif_annotated_tfs	0.4993	0.487	0.5089
+K562	swapped	per_tf_mean_auroc	0.498	0.4844	0.5126

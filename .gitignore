@@ -1,0 +1,21 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+build/
+dist/
+.venv/
+.ipynb_checkpoints/
+
+# OS
+.DS_Store
+
+# Benchmark data and outputs (downloaded or generated, never versioned)
+benchmarks/beeline/data/
+benchmarks/beeline/results/*/
+benchmarks/encode/benchmark/
+benchmarks/encode/predictions/
+benchmarks/encode/build/
+*.tar.gz
+predictions/
+results_local/

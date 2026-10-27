@@ -1,0 +1,32 @@
+cff-version: 1.2.0
+message: "If you use sc-GRIP, please cite the ICDM 2025 paper and state the software version you used."
+title: "sc-GRIP"
+type: software
+version: 0.2.0
+repository-code: "https://github.com/caroatria/2025-sc-grip-polarity"
+authors:
+  - family-names: Atria
+    given-names: Carolina E.
+    affiliation: University of Vienna
+preferred-citation:
+  type: conference-paper
+  title: "sc-GRIP: a Graph Convolutional Approach to Infer Gene Interaction Polarity from Single-cell Data"
+  collection-title: "Proceedings of the IEEE International Conference on Data Mining (ICDM)"
+  year: 2025
+  authors:
+    - family-names: Atria
+      given-names: Carolina E.
+    - family-names: Cai
+      given-names: Yitao
+    - family-names: Weber
+      given-names: Pascal
+    - family-names: Beer
+      given-names: Anna
+    - family-names: Kriege
+      given-names: Nils
+    - family-names: Böhm
+      given-names: Christian
+    - family-names: Revilla-i-Domingo
+      given-names: Roger
+    - family-names: Plant
+      given-names: Claudia
